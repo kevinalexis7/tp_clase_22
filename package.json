@@ -1,0 +1,15 @@
+{
+  "name": "Mercado_Liebre_Maquetado",
+  "version": "1.0.0",
+  "description": "Maqueta estructural de una pagina web",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Kevin Espinola",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
