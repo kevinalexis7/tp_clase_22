@@ -1,0 +1,78 @@
+header {
+    background-color: var(--Amarillo);
+}
+
+header p {
+    display: flex;
+    justify-self: center;
+}
+
+.searchbar p, .searchbar a{
+    background-color: var(--GrisClaro);
+    border: var(--GrisOscuro) 1px solid;
+    border-radius: 2px;
+    display: inline;
+    margin-left: 5%;
+    line-height: 21px;
+}
+
+header nav ul a{
+    color: black;
+}
+
+img {
+    width: 100%;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.Descripcion p {
+    font-size: 18px;
+}
+
+.Descripcion h3 {
+    font-size: 16px;
+}
+
+main {
+    background-color: var(--GrisClaro);
+}
+header .burger-menu{
+    display: flex;
+    justify-content: center;
+}
+header .burger-menu a{
+    background-color: var(--Celeste);
+    color: white;
+    border-radius: 5px;
+    padding: 7px 10px;
+    font-size: 1.5rem;
+    margin: 20px;
+}
+
+footer section{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    align-items: center;
+    color: var(--GrisOscuro);
+}
+
+footer section i {
+    font-size: 2rem;
+    color: var(--Celeste)
+}
+
+footer section p {
+    display: flex;
+    font-size: small;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .Copyright {
+    display: block;
+    margin: 20px;
+}
