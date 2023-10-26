@@ -1,3 +1,2 @@
-# Trabajo Práctico ML - Maquetado
-## COMISIÓN 22
+# Trabajo Práctico MERCADO LIEBRE
 ### Espinola Kevin A.
