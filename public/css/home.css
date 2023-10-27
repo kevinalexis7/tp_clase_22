@@ -7,38 +7,21 @@ header p {
     justify-self: center;
 }
 
-.searchbar p, .searchbar a{
+.searchbar p{
     background-color: var(--GrisClaro);
     border: var(--GrisOscuro) 1px solid;
     border-radius: 2px;
     display: inline;
-    margin-left: 5%;
+    margin-left: 1rem;
     line-height: 21px;
 }
 
 header nav ul a{
     color: black;
+    margin-left: 1rem;
+    display: none;
 }
 
-img {
-    width: 100%;
-}
-
-h2 {
-    font-size: 24px;
-}
-
-.Descripcion p {
-    font-size: 18px;
-}
-
-.Descripcion h3 {
-    font-size: 16px;
-}
-
-main {
-    background-color: var(--GrisClaro);
-}
 header .burger-menu{
     display: flex;
     justify-content: center;
@@ -52,12 +35,62 @@ header .burger-menu a{
     margin: 20px;
 }
 
-footer section{
+main {
+    background-color: var(--GrisClaro);
+    width: 90%;
+    margin:0 5%;
+}
+
+main section {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
-    align-items: center;
+    gap: 15px;
+}
+
+main section article {
+    background-color: white;
+}
+
+img {
+    width: 100%;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.Descripcion {
+    padding: 10px;
+    border-top: 1px solid var(--GrisClaro);
+}
+
+.Descripcion i {
+    font-size: 10px;
+    border: 1px solid var(--Verde);
+    border-radius: 100px;
+    color: var(--Verde);
+    padding: 10px 9px;
+}
+
+.Descripcion .precio {
+    font-size: 18px;
+}
+
+.Descripcion .descuento {
+    font-size: 16px;
+    color: var(--Verde);
+}
+
+.Descripcion .producto {
+    display: none;
+}
+
+footer section{
     color: var(--GrisOscuro);
+    display: grid;
+    place-items: center;
+    margin-bottom: 10px;
 }
 
 footer section i {
@@ -66,13 +99,36 @@ footer section i {
 }
 
 footer section p {
-    display: flex;
     font-size: small;
-    align-items: center;
-    flex-direction: column;
+    text-align: center;
+
 }
 
 footer .Copyright {
     display: block;
     margin: 20px;
+}
+
+@media (min-width: 361px){
+    .Descripcion .producto {
+        display: block;
+        font-size: 16px;
+        color: var(--GrisOscuro);
+        margin-top: 15px;
+    }
+
+    main section article {
+        box-shadow: 0px 0px 10px #646464;;
+    }
+
+    header nav ul a{
+        color: black;
+        display: block;
+    }
+
+    header .burger-menu a{
+        visibility: hidden;
+        font-size: 1px;
+        margin: 4px;
+    }
 }
