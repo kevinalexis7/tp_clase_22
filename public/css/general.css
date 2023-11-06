@@ -1,6 +1,6 @@
 :root {
     --Amarillo: #EAC926;
-    --Azul: #03264C;
+    --Azul: #0043a9;
     --Celeste: #1259c3;
     --GrisOscuro: #666;
     --GrisClaro: #ebebeb;
@@ -18,8 +18,7 @@ a {
 
 body {
     font-family: 'Roboto';
-    max-width: 1140px;
-    width: auto;
+    /* max-width: 1140px; */
     background-color: var(--GrisClaro);
 }
 

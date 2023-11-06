@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,48 +8,70 @@
     <script src="https://kit.fontawesome.com/9687515d25.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/styles.css">
 </head>
+
 <body>
+    <!-- header -->
     <header class="header">
-        <img src="/img/logo-mercado-liebre.svg" alt="Logo-mercado-liebre" width="300">
-        <div class="searchbar">
-            <p>Busacar productos, marcas</p>
-            <button href=""><i class="fa-solid fa-magnifying-glass"></i></button>
+        <!-- parte amarilla -->
+        <div class="top-bar">
+            <img src="/img/logo-mercado-liebre.svg" alt="Logo-mercado-liebre" width="300" class="mp-logo">
+
+            <div class="searchbar">
+                <form action="">
+                    <input type="search" placeholder="Buscar producto, marca"><button><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+
+            <!-- header-text -->
+            <p class="header-text"><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de
+                crédito</p>
+
         </div>
-        <div class="burger-menu">
-            <p><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
-        </div>
-            <nav class="navbar">
-            <ul>
-                <li><a href="/ofertas">Ofertas</a></li>
-                <li><a href="/tiendasOficiales">Tiendas Oficiales</a></li>
-                <li><a href="/vender">Vender</a></li>
-                <li><a href="/ayuda">Ayuda</a></li>
-            </ul>
-        </nav>
-        <nav class="login bar">
-            <ul>
-                <li><a href="/CreatuCuenta">Creá tu cuenta <i class="fa-regular fa-id-card"></i></a></li>
-                <li><a href="/ingresa">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
-                <li><a href="/misCompras">Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
-            </ul>
-        </nav>
-        <div class="burger-menu">
+
+        <div class="burger-menu"><!-- menu hamburguesa -->
             <a href=""><i class="fa-solid fa-bars"></i></a>
         </div>
-        <div class="banner">
+
+        <!-- barra de navegación -->
+        <nav class="navegacion">
+            <div class="navbar">
+                <ul>
+                    <li><a href="/ofertas">Ofertas</a></li>
+                    <li><a href="/tiendasOficiales">Tiendas Oficiales</a></li>
+                    <li><a href="/vender">Vender</a></li>
+                    <li><a href="/ayuda">Ayuda</a></li>
+                </ul>
+            </div>
+
+            <!-- log in -->
+            <div class="login bar">
+                <ul>
+                    <li><a href="/CreatuCuenta">Creá tu cuenta <i class="fa-regular fa-id-card"></i></a></li>
+                    <li><a href="/ingresa">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
+                    <li><a href="/misCompras">Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <main class="main">
+
+        <div class="banner"><!-- banner -->
             <img src="/img/img-home-banner.jpg" alt="home-banner">
         </div>
-    </header>
-    <main class="Productos">
-        <section>
-            <h2>Basado en tu última visita</h2>
+
+        <section class="productos"><!-- productos -->
+
+            <h2>Basado en tu última visita</h2><!-- últimas vistas -->
+
             <article>
                 <img src="/img/img-cafetera-moulinex.jpg" alt="cafetera-moulinex" width="300">
                 <div class="Descripcion">
                     <i class="fa-solid fa-truck"></i>
                     <p class="precio">$6.770</p>
-                    <p class="descuento">40% OFF</p>
-                    <p class="producto">Cafetera Moulinex</p>
+                    <h3 class="descuento">40% OFF</h3>
+                    <h3 class="producto">Cafetera Moulinex</h3>
                 </div>
             </article>
             <article>
@@ -80,7 +103,9 @@
             </article>
         </section>
         <section>
-            <h2>Ofertas</h2>
+
+            <h2>Ofertas</h2><!-- ofertas -->
+
             <article>
                 <img src="/img/img-cafetera-moulinex.jpg" alt="cafetera-moulinex" width="300">
                 <div class="Descripcion">
@@ -119,25 +144,35 @@
             </article>
         </section>
     </main>
-    <footer>
+
+
+    <footer><!-- footer -->
         <section>
-            <i class="fa-solid fa-credit-card"></i>
-            <h4>Pagá con tarjeta o en efectivo</h4>
-            <p>Con Mercado Liebre Cash, tenés cuotas sin <br>interés con targeta o en efectivo en puntos de <br>pago.¡Y siempre es seguro!</p>    
-        </section>
-        <section>
-            <i class="fa-solid fa-gift"></i>
-            <h4>Envíos gratis desde $ 2.500</h4>
-            <p>Solo por estar registrad@ en Mercado Liebre <br>tenés envios gratis en miles de productos. Es <br>un beneficio de Mercado puntos.</p>
-        </section>
-        <section>
-            <i class="fa-solid fa-user-shield"></i>
-            <h4>Seguridad, de principio a fin</h4>
-            <p>¿No te gusta?¡Devolvelo! En MercadoLiebre, <br>no hay nada que no puedas hacer, porque estás <br>siempre protegid@.</p>
+            <div>
+                <i class="fa-solid fa-credit-card"></i>
+                <h4>Pagá con tarjeta o en efectivo</h4>
+                <p>Con Mercado Liebre Cash, tenés cuotas sin <br>interés con targeta o en efectivo en puntos de
+                    <br>pago.¡Y
+                    siempre es seguro!</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-gift"></i>
+                <h4>Envíos gratis desde $ 2.500</h4>
+                <p>Solo por estar registrad@ en Mercado Liebre <br>tenés envios gratis en miles de productos. Es <br>un
+                    beneficio de Mercado puntos.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-user-shield"></i>
+                <h4>Seguridad, de principio a fin</h4>
+                <p>¿No te gusta?¡Devolvelo! En MercadoLiebre, <br>no hay nada que no puedas hacer, porque estás
+                    <br>siempre
+                    protegid@.</p>
+            </div>
         </section>
         <section class="Copyright">
             <h5>Copyright © 1999-2020 MercadoLiebre S.R.L. </h5>
         </section>
     </footer>
 </body>
+
 </html>
