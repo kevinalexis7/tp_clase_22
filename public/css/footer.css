@@ -7,7 +7,13 @@ footer section div{
 
 footer section div i {
     font-size: 2rem;
-    color: var(--Celeste)
+    color: var(--Celeste);
+    transition: all 300ms;
+    
+}
+footer section div i:hover {
+    color: #0022AA;
+    transform: translateY(-7px);
 }
 
 footer section div p {

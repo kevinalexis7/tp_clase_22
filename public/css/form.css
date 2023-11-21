@@ -58,6 +58,9 @@
     background-color: var(--Celeste);
     color: #FFF;
 }
+.button__primary:hover {
+    background-color: #0022AA;
+}
 
 .form__msg-error {
     color: red;

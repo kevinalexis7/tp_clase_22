@@ -24,14 +24,18 @@ main h2 {
 
 main section article {
     background-color: white;
-    box-shadow: 0px 0px 10px #646464;
     width: 70%;
+}
+
+main section article:hover {
+    box-shadow: 0px 0px 10px #646464;
 }
 
 main section article .Descripcion {
     padding: 10px;
     border-top: 1px solid var(--GrisClaro);
     position: relative;
+    height: 60px;
 }
 
 
@@ -47,6 +51,11 @@ main section article .Descripcion i {
     top: -15px;
     color: var(--Verde);
     background-color: #FFF;
+    transition: all 1s;
+}
+
+main section article .Descripcion i:hover {
+    transform: rotate(-360deg);
 }
 
 main section article .Descripcion .precio {
@@ -66,7 +75,10 @@ main section article .Descripcion .descuento {
 main section article .Descripcion .producto {
     font-size: 18px;
     color: var(--GrisOscuro);
-    margin: 15px;
+    margin: 0 15px;
+    height: 0;
+    transition: all 1s;
+    overflow: hidden;
 }
 
 @media (min-width: 768px){
@@ -74,17 +86,23 @@ main section article .Descripcion .producto {
     main section {
         justify-content: space-between;
         padding: 0 70px;
+        align-items: flex-start; 
     }
     
 
 
     main section article{
         width: 45%;
+
     }
     
 
     main h2 {
         text-align: start;
+    }
+
+    main section article:hover .Descripcion .producto {
+        height: 20px;
     }
 }
 
